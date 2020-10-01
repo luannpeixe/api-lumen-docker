@@ -1,0 +1,24 @@
+runtime: php74
+service: default
+
+instance_class: F1
+
+env_variables:
+  APP_NAME: API
+  APP_ENV: production
+  APP_KEY: $2y$10$76y4mLwkHpW2xrxvpb7dkOfT8RNkwTGYj2ZJLm/xpxGF9yh4E0HLq
+  APP_DEBUG: false
+  APP_TIMEZONE: "Europe/Lisbon"
+
+  LOG_CHANNEL: syslog
+  
+  SSL_MODE: require
+  DB_CONNECTION: mysql
+  DB_TIMEZONE: "Europe/Lisbon"
+  DB_DATABASE: api
+  DB_USERNAME: api-user
+  DB_PASSWORD: Q4]_VAqph5Wh{6\P
+  DB_SOCKET: "/cloudsql/your-project-id:us-east4:your-project-id"
+  cloud_sql_instances: "/cloudsql/your-project-id:us-east4:your-project-id"
+
+  APPLICATION_ID: your-project-id
